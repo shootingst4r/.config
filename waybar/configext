@@ -1,0 +1,72 @@
+{
+    "layer": "top",
+    "position": "top",
+    "modules-left": ["custom/Hyprland", "clock"],
+    "modules-center": ["hyprland/workspaces"],
+    "modules-right": ["bluetooth", "wireplumber", "backlight", "cpu", "temperature" , "memory", "battery", "network"],
+
+
+    "custom/Hyprland": {
+        "format": ""
+    },
+
+    "clock": {
+        "format": "{:%R}"
+    },
+
+    "hyprland/workspaces" : {
+        "format": "{icon}",
+        "on-click": "activate",
+        "format-icons" : {
+        "urgent" : "󰗖",
+        "active" : "󰻃",
+        "default" : "󰝦"
+        }
+    },
+
+    "backlight": {
+        "device": "intel_backlight",
+        "format": "{icon} {percent}%",
+        "format-icons": ["󰃞"]
+    },
+
+    "battery" : {
+        "states": {
+            "warning": 20,
+            "critical": 10
+        },
+        "format": "{icon} {capacity}%",
+        "format-icons": ["󰁺","󰁻","󰁼","󰁽","󰁾","󰁿","󰂀","󰂁","󰂂","󰁹" ]
+    },
+
+    "bluetooth": {
+        "format": "󰂯 {device_alias}",
+        "format-disabled": ""
+    },
+
+    "cpu": {
+        "format": "{usage}%"
+    },
+
+    "memory": {
+        "format": " {}%"
+    },
+    
+    "network": {
+        "format-wifi": " {essid}",
+        "format-disconnected": "󰖪"
+    },
+
+    "temperature": {
+        "format": "{temperatureC}°C"
+    },
+
+    "wireplumber": {
+        "format": "{icon} {volume}%",
+        "format-muted": "󰝟",
+        "format-icons": ["󰕿", "󰖀", "󰕾"]
+    }
+
+
+}
+

@@ -1,0 +1,59 @@
+@import "themes/waybar-frappe.css";
+
+* {
+    border: none;
+    border-radius: 5px;
+    min-height: 0;
+    box-shadow: none;
+    font-family: FiraCode Nerd Font;
+    font-weight: bold;
+    text-shadow: none;
+    font-size: 15px;
+}
+
+#waybar {
+    background-color: transparent;
+    margin-top: 5px;
+}
+
+
+#workspaces {
+    
+    padding-left: 3px;
+    padding-right: 5px;
+    margin: 2px;
+    background: @crust; 
+}
+
+#workspaces button{
+    color: @sapphire;
+}
+
+#window {
+    margin-right: 35pt;
+    margin-left: 35pt;
+}
+#custom-Hyprland,
+#pulseaudio, 
+#backlight,
+#network, 
+#clock, 
+#battery,
+#wireplumber,
+#memory,
+#bluetooth,
+#temperature,
+#cpu {
+    background: @crust;
+    color: @sapphire;
+    padding-left: 10px;
+    margin: 2px;
+    padding-right: 10px;
+}
+
+battery.warning{
+    color: @peach;    
+}
+battery.critical{
+    color: @red;
+}
