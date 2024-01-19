@@ -40,8 +40,8 @@
     },
 
     "bluetooth": {
-        "format": "󰂯 {device_alias}",
-        "format-disabled": ""
+        "format-connected": "󰂯 {device_alias}",
+        "format" : ""
     },
     
     "network": {
